@@ -23,6 +23,30 @@
 }
 
 @media only screen and (max-width: 640px) {
+
+    /* ---------- Pseudocode ------------
+        The nav does not gracefully collapse into range of
+        this viewport width.
+
+        Ideally, the HTML would be refactored to use simple
+        links instead of the ul>li>a theme it now uses.
+
+        1. menu re-structure
+            div.header
+                div.wrapper
+                    div.nav
+                        a.menuItem
+                        a.menuItem
+                        a.menuItem
+        
+        2. css restructuring and simplification
+            .menuItem {
+                apply padding
+                veritcally center text
+                border on the right
+                other styling
+            }
+    */
     .wrapper {
         width: 100%;
     }
